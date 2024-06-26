@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>世界咖啡</title>
+  <!--引入相关的css文件-->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap-icons.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/font-awesome.min.css">
+
+  <!--引入相关的js文件-->
+  <script src="bootstrap/js/jquery.slim.min.js"></script>
+  <script src="bootstrap/js/popper.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js/script.js"></script>
+</head>
+
+<body class style>
+
+
+  <audio src="media/bgm.mp3" autoplay></audio>
+
+  
+  
+
+  
+  <section id="nav" class="nav fixed-top" style>
+    <div class="container ">
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-cup-hot-fill"></i>
+          <button type="button" class="navbar-toggle " data-toggle="modal" data-target="#myModal">
+            <i class="fa fa-user"></i>
+        </button>
+          <span>Coffee</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <!--<span class="navbar-toggler-icon"></span>-->
+          <i class="bi bi-list"></i>
+          <i class="bi bi-x"></i>
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="#home">首页 <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#about">关于</a>
+            <a class="nav-link" href=" #menu">菜单</a>
+            <a class="nav-link" href=" #gallery">相册</a>
+            <a class="nav-link" href=" #contact">订阅</a>
+            <a class="nav-link" href=" #reviews">反馈</a>
+            <a class="nav-link" href=" #post">文章</a>
+            <a class="nav-link" href=" #newsletter">新闻</a>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!--登入模块-->
+  <div class="modal fade loginform" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Coffee</h4>
+        </div>
+        <div class="modal-body">
+            <h3>开启美好的一天</h3>
+            <form action="" method="post">
+                <div class="form-group">
+                    <input class="form-control" type="email" placeholder="请输入您的账号" name="" id="">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" placeholder="请输入您的密码" name="" id="">
+                </div>
+                <div class="form-txt">
+                    <div class="row">
+                        <div class="col-md-1 col-sm-1 col-xs-1">
+                            <input type="checkbox" id="remenber" aria-label="...">
+                        </div>
+                        <div class="col-md-7 col-sm-7 col-xs-7">
+                            <label for="remenber">记住账号</label>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-4">
+                            <a href="">忘记密码?</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
+
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+  <!-- 焦点图模块-->
+  <section id="home" class="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="jumbotron">
+            <p class="lead">Coffee House</p>
+            <h1 class="display-4">开启美好的一天!</h1>
+            <a class="btn btn-outline-primary btn-lg" href="#" role="button">了解更多</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--关于模块-->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 d-none d-md-block">
+          <img class="img-fluid" src="images/about-img-1.png" alt="">
+        </div>
+        <div class="col-12 col-md-6">
+          <h2><small>why choose us?</small></h2>
+          <h2>The Best salad Maker In The Town</h2>
+          <p class="">
+            我们的主要产品是咖啡，用精品咖啡豆手磨研制，每一杯都出自匠心之手等我们坚持用最新鲜的原料做最好的咖啡。
+            我们的咖啡，它有着浓烈而醇厚香气，令你感觉到心旷神怡。喝上一杯咖啡，就仿佛整个人都沉浸在咖啡的芳香之中。
+          </p>
+          <a class="btn btn-outline-primary" href="" role="button">了解更多</a>
+          <div class="row">
+            <div class="col-4">
+              <div class="icons text-center">
+                <i class="bi bi-cup-hot-fill"></i>
+                <p>冷热皆宜</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="icons text-center">
+                <i class="bi bi-alarm-fill"></i>
+                <p>节约时间</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="icons text-center">
+                <i class="bi bi-bus-front-fill"></i>
+                <p>通勤必备</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--菜单模块-->
+  <section id="menu" class="menu">
+    <div class="container">
+      <div class="page-header text-center">
+        <h1>Our Menu</h1>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <img src="images/menu-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">铁皮卡（Typica）</h5>
+              <p class="card-text">产于也门的一种天然变种。最为常见，荷兰人曾在印度尼西亚种植，
+                法国人又将它带到了加勒比海地区，后传播至整个中南美洲。产量小，易得锈叶病。铁皮卡
+                咖啡果实呈锥形。品质极高，咖啡甜度高，口感纯净，酸度宜人。
+              </p>
+              <a href="#" class="btn btn-outline-primary">加入购物车</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <img src="images/menu-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">白咖啡豆</h5>
+              <p class="card-text">白咖啡是马来西亚的特产，其颜色较黑咖啡淡，因此得名。这种咖啡的特点在于其制作过程中不加入焦糖，而是经过低温烘培，从而大量减少了咖啡碱的含量。
+                这使得白咖啡的焦苦和酸涩味较一般咖啡要少，咖啡因含量也较低。更为重要的是，白咖啡在制作过程中不添加任何添加剂，
+                完全保留了咖啡的原始香味。因此，它对肠胃道的刺激较小，口感醇厚、香浓适口。
+              </p>
+              <a href="#" class="btn btn-outline-primary">加入购物车</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <img src="images/menu-3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">卡斯蒂洛（Castillo）</h5>
+              <p class="card-text">卡斯蒂洛是另一种实验室培育的豆种。由卡蒂莫咖啡经过长时间的培育和人工干预突变、混种而成。虽然味道略差，但哥伦比亚境内种植该品种咖啡的农户很多，
+                种植和生豆处理工艺不断完善，品质在提升。</p>
+              <a href="#" class="btn btn-outline-primary">加入购物车</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <img src="images/menu-4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">波旁（Bourbon）</h5>
+              <p class="card-text">
+                也是产于也门的天然变种。法国殖民时期，法国人将这种咖啡出口海外。波旁咖啡果实短小、圆润，果肉和种子的密度很高。甜度高，酸度明亮。这种咖啡的产量比铁皮卡高20-30%，但仍被视为低产量豆种，
+                且同样易受锈叶病影响。大部分波旁为红色，有两个天然变种会呈橙和黄。
+              </p>
+              <a href="#" class="btn btn-outline-primary">加入购物车</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <img src="images/menu-5.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">卡图拉（Caturra）</h5>
+              <p class="card-text">卡图拉是波旁的一个天然变种，发现于巴西，中美洲常见。卡图拉咖啡口感较波旁更为单薄，
+                甜度也相对较低，但酸味明亮，口感纯净，酸度宜人。
+              </p>
+              <a href="#" class="btn btn-outline-primary">加入购物车</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card text-center">
+            <img src="images/menu-6.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">新世界（Mundo Novo）</h5>
+              <p class="card-text">新世界是红波旁和苏门答腊铁皮卡的天然混种，在巴西流行，占巴西阿拉比卡咖啡总种植
+                量的40%。产量高，抗病强，甜度较低。
+              </p>
+              <a href="#" class="btn btn-outline-primary">加入购物车</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--相册模块-->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <div class="page-header text-center">
+        <h1>Our Gallery</h1>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="images/g-img-1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">卡布奇诺</h5>
+              <p class="card-text">奶香更重，奶泡更绵密。口感比较绵密，咖啡味突出。.</p>
+              <a href="#" class="btn btn-outline-primary">加入购物车</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="images/g-img-2.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">西班牙拿铁</h5>
+              <p class="card-text">特色是以冰冷的鲜奶油，搭配热腾腾的Espresso,
+                口感强劲浓郁的Espresso可以增加绵密柔顺的口感。</p>
+              <a href="#" class="btn btn-outline-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="images/g-img-3.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">爱尔兰咖啡</h5>
+              <p class="card-text">最经典的咖啡鸡尾酒咖，咖啡和威士总在口味上可能不是那么协调，甚至相互有冲突。</p>
+              <a href="#" class="btn btn-outline-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="images/g-img-4.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">燕麦拿铁</h5>
+              <p class="card-text">和拿铁的区别是口感不同，原料不同，拿铁是意式浓缩加牛奶，
+                燕麦拿铁是意式浓缩结合植物燕麦奶，喜欢奶咖又乳糖不耐受选手的福音。</p>
+              <a href="#" class="btn btn-outline-primary">加入购物车</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="images/g-img-5.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">浓缩咖啡</h5>
+              <p class="card-text">所有意式咖啡的基底，但是分量小浓度高，小白刚开始喝会不太好接受。
+                口感偏重，酸甜苦平衡，醇厚饱满。</p>
+              <a href="#" class="btn btn-outline-primary">加入购物车</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <img src="images/g-img-6.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">美式咖啡</h5>
+              <p class="card-text">浓缩咖啡稀释的黑咖啡口感比浓缩清爽，突出咖啡最原始风味，加水稀释后口感柔和甘甜。</p>
+              <a href="#" class="btn btn-outline-primary">加入购物车</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--反馈模块-->
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <div class="page-header text-center">
+        <h1>Customers Reviews</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbs text-center">
+            <a href="#" class="thumbnail">
+              <img class="img-responsive" src="images/jb4.jpg" alt="...">
+              <h3>蒋介博</h3>
+              <p> 只要我走位够风骚，就没人能找到我做售后。</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbs text-center">
+            <a href="#" class="thumbnail">
+              <img class="img-responsive" width="219" src="images/jb2.jpg" alt="...">
+              <h3>蒋介博</h3>
+              <p>微笑服务是我的服务宗旨，当我无法处理您的问题时，那么我只能笑!</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbs text-center">
+            <a href="#" class="thumbnail">
+              <img class="img-responsive" src="images/jb31.jpg" alt="...">
+              <h3>蒋介博</h3>
+              <p>当我竖起中指时，你最好祈祷主来拯救你吧！</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--联系模块-->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="page-header text-center">
+        <h1>Comtact Us</h1>
+      </div>
+      <div class="row info">
+        <div class="col-md-4 icons-box">
+          <div class="icons text-center">
+            <i class="fa fa-phone fa-3x"></i>
+            <h3>电话号码</h3>
+            <p>+86-13502276451</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 icons-box">
+          <div class="icons text-center">
+            <i class="fa fa-envelope fa-3x"></i>
+            <h3>邮箱</h3>
+            <p>JiangJiebo@qq.com</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 icons-box">
+          <div class="icons text-center">
+            <i class="fa fa-map fa-3x"></i>
+            <h3>地址</h3>
+            <p>广东省河源市源城区邮电一号四栋405</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row send">
+        <div class="col-md-6">
+          <iframe src="map.html" width="100%" height="100%" frameborder="0" scrolling="no">
+            <html xmlns="http://www.w3.org/1999/xhtml">
+
+            <head>
+              <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+              <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具">
+              <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图">
+              <title>百度地图API自定义地图</title>
+              <!--引用百度地图API-->
+              <style type="text/css">
+                html,
+                body {
+                  margin: 0;
+                  padding: 0;
+                }
+
+                .iw_poi_title {
+                  color: #CC5522;
+                  font-size: 14px;
+                  font-weight: bold;
+                  overflow: hidden;
+                  padding-right: 13px;
+                  white-space: nowrap
+                }
+
+                .iw_poi_content {
+                  font: 12px arial, sans-serif;
+                  overflow: visible;
+                  padding-top: 4px;
+                  white-space: -moz-pre-wrap;
+                  word-wrap: break-word
+                }
+              </style>
+              <script type="text/javascript"
+                src="http://api.map.baidu.com/api?key=&amp;v=1.1&amp;services=true"></script>
+            </head>
+
+            <body>
+              <!--百度地图容器-->
+              <div style="width:697px;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
+
+              <script type="text/javascript">
+                //创建和初始化地图函数：
+                function initMap() {
+                  createMap();//创建地图
+                  setMapEvent();//设置地图事件
+                  addMapControl();//向地图添加控件
+                }
+
+                //创建地图函数：
+                function createMap() {
+                  var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+                  var point = new BMap.Point(113.331084, 23.112223);//定义一个中心点坐标
+                  map.centerAndZoom(point, 17);//设定地图的中心点和坐标并将地图显示在地图容器中
+                  window.map = map;//将map变量存储在全局
+                }
+
+                //地图事件设置函数：
+                function setMapEvent() {
+                  map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+                  map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+                  map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+                  map.enableKeyboard();//启用键盘上下左右键移动地图
+                }
+
+                //地图控件添加函数：
+                function addMapControl() {
+                  //向地图中添加缩放控件
+                  var ctrl_nav = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE });
+                  map.addControl(ctrl_nav);
+                  //向地图中添加缩略图控件
+                  var ctrl_ove = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: 1 });
+                  map.addControl(ctrl_ove);
+                  //向地图中添加比例尺控件
+                  var ctrl_sca = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
+                  map.addControl(ctrl_sca);
+                }
+
+
+                initMap();//创建和初始化地图
+              </script>
+            </body>
+
+            </html>
+          </iframe>
+        </div>
+        <div class="col-md-6">
+          <h3>Get In Touch</h3>
+          <form action="" method="post">
+            <input class="form-control" type="text" placeholder="name" name="" id="">
+            <input class="form-control" type="email" placeholder="email" name="" id="">
+            <input class="form-control" type="number" placeholder="phone" name="" id="">
+            <textarea class="form-control" placeholder="message" name="" id="" rows="6"></textarea>
+            <input type="submit" value="send message" class="btn btn-default btn-lg">
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--文章模块
+  <section class="post" id="post">
+    <div class="container">
+      <div class="page-header text-center">
+        <h1>Our Daily Posts</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbs text-center">
+            <a href="#" class="thumbnail">
+              <div class="imgbox">
+                <img class="img-responsive" src="images/hjh1.jpg" alt="">
+              </div>
+              <h3>黄家三少家华</h3>
+              <p>04年生 肇庆人也</p>
+              <button type="button" class="btn btn-default btn-lg">了解更多</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbs text-center">
+            <a href="#" class="thumbnail">
+              <div class="imgbox">
+                <img class="img-responsive" src="images/hjh1.jpg" alt="">
+              </div>
+              <h3>黄家三少家华</h3>
+              <p>04年生 肇庆人也</p>
+              <button type="button" class="btn btn-default btn-lg">了解更多</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <div class="thumbs text-center">
+            <a href="#" class="thumbnail">
+              <div class="imgbox">
+                <img class="img-responsive" src="images/hjh1.jpg" alt="">
+              </div>
+              <h3>黄家三少家华</h3>
+              <p>04年生 肇庆人也</p>
+              <button type="button" class="btn btn-default btn-lg">了解更多</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  -->
+
+  <section class="post" id="post">
+    <div class="container">
+        <div class="page-header text-center">
+            <h1>Our Daily Posts</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbs text-center">
+                    <a href="#" class="thumbnail">
+                        <div class="imgbox"><img class="img-responsive" src="images/hwz1.jpg" alt="..."></div>
+                        <h3>震惊！男大竟然在台球馆做这种事....</h3>
+                        <p> 6月25日男大黄某重在游殿桌球馆开杆竟把男伴蒋某博底裤打穿。事后蒋先生回复称"当时白球就离我10000mm，差点就把我击穿！"</p>
+                        <button type="button" class="btn btn-default btn-lg">了解更多</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbs text-center">
+                    <a href="#" class="thumbnail">
+                        <div class="imgbox"><img class="img-responsive" src="images/hh1.jpg" alt="..."></div>
+                        <h3>喜报！喜报！</h3>
+                        <p>近日，凰蒋集团与皇博集团双双联手，拿下江门市史上第一破千亿项目，江门市民洪先生称"我也不知道啊，当时就3.1415926抽离了原子核，
+                          使得本田雅阁2.0升得到了氦气加速，当时南非的亚美蝶就扇动翅膀起飞了"</p>
+                        <button type="button" class="btn btn-default btn-lg">了解更多</button>
+                    </a>
+                </div>                    
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbs text-center">
+                    <a href="#" class="thumbnail">
+                        <div class="imgbox"><img class="img-responsive" src="images/hjh1.jpg" alt="..."></div>  
+                        <h3>放学后，竟然发生这样的事！</h3>
+                        <p>邮电一男子放学后在有氧跑道上当众吃鸡。据当事人黄先生称”对啊，他很用力那时候“</p>
+                        <button type="button" class="btn btn-default btn-lg">了解更多</button>
+                    </a>
+                </div>                    
+            </div>
+            
+        </div>
+    </div>
+    
+</section>
+
+  <!--新闻模块-->
+  <section id="newsletter" class="newsletter ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3 text-center ">
+          <h3>newsletter</h3>
+          <p>subscribe for latest upadates</p>
+          <div class="input-group mb-3 ">
+            <input type="text" class="form-control" placeholder="请输入您的邮箱地址..." aria-label="Recipient's username"
+              aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">订阅</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--页脚模块-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center">
+            <h1>Coffee</h1>
+            <p>Created By <a href="">Mr.Chi</a> Designer | All Rights Reserved!</p>
+            <div class="row">
+              <div class="col-md-4 offset-md-4">
+                <div class="icons text-center">
+                  <i class="fa fa-wechat fa-1x"></i>
+                  <i class="fa fa-qq fa-1x"></i>
+                  <i class="fa fa-facebook fa-1x"></i>
+                  <i class="fa fa-twitter fa-1x"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
